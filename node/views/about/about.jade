@@ -1,3 +1,14 @@
-html
-    body
-        h1 This is about.jade
+extends ../layout
+
+block content
+ #about-jade
+  h1 About this app
+  p The purpose of this app is to be a starting point for nodejs applications, and to present one way to structure the file hiearchy.
+  ul
+   li http-server.js - the main starting point for the app.  This file:
+    ul
+     li Calls environment.js
+     li Calls environment.js
+     li Activates listener to watch for http requests
+   li environment.js - configures operating environment
+   li routes.js - configures url routing

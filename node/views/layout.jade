@@ -1,9 +1,13 @@
-!!! 5
-  html(lang='en')
-    head
+doctype 5
+html(lang='en')
+ head
   title= title
-  
-  body
-    div#main
-        h1 This is layout.jade
-        div#container!= body
+
+ body
+  #menu
+   a(href='/') Home
+   &nbsp;
+   a(href='/about') About
+
+  #main
+   block content
